@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    
+
+    <title>Survey Form</title>
+</head>
+<body>
+    <div id="container">
+        
+            <h1 id="title">Survey Form</h1>
+            <p id="description">Description</p>
+        
+        
+            <form id="survey-form" action="">
+                <div class="form">    
+                    <!--label for=name-label stays for the text in the field, because of this the id=name-label-->
+                    <label for="name-label" id="name-label">Name:</label> 
+                    <input id="name" type="text" name="name"  placeholder="Name" required>
+                </div>
+
+                <div class="form">
+                    <label for="email-label" id="email-label">E-Mail:</label>
+                    <input id="email" type="email" name="email"   placeholder="E-Mail" required>
+                </div>
+
+                <div class="form">
+                    <label for="number-label" id="number-label">Number:</label>
+                    <input id="number" type="number" name="number" min="1" max="10" placeholder="Tel Number" required>
+                </div>
+
+                <div class="form">
+                    <label for="dropdown">Select your favorite fruit:</label>  
+                    <select name="fruit" id="dropdown">
+                    <option value="apple">Apple</option>
+                    <option value="banana">Banana</option>
+                    <option value="cherry">Cherry</option>
+                    <option value="kiwi">Kiwi</option>
+                    <option value="orange">Orange</option>
+                    </select>
+                </div>
+
+                <div class="form">
+                    <p>Do you consume fast food?</p>
+                    <fieldset id="field-ffood">
+                    
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="ffood" id="yes" value="yes">
+                
+                        <label for="no">No</label>
+                        <input type="radio" name="ffood" id="no" value="no">
+                    </fieldset>
+                </div>
+
+                <div class="form">
+                    <p>What do you like to drink:</p>
+                    <fieldset id="field-drink">
+                    
+                        <input type="checkbox" name="drink" id="water" value="water">
+                        <label for="water">Water</label>
+                
+                        <input type="checkbox" name="drink" id="juice" value="juice">
+                        <label for="juice">Juice</label>
+                
+                        <input type="checkbox" name="drink" id="tee" value="tee">
+                        <label for="tee">Tee</label>
+                
+                        <input type="checkbox" name="drink" id="coffee" value="coffee">
+                        <label for="coffee">Coffee</label>
+                    </fieldset>
+                </div>
+
+                <div class="form">
+                    <label for="comments-label" id="comments-label">Aditional comments:</label>
+                    <!-- <input type="text" name="comments" id="comments">
+                    -->
+                    <br>
+            
+                    <textarea id="text" name="text"  cols="30" rows="10">Your suggestions:</textarea>
+            
+                    
+                </div>
+            <button type="submit" id="submit" form="survey-form" value="submit">Submit</button>
+        </form>
+    </div>
+
+    
+    
+
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
